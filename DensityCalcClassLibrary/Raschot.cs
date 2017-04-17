@@ -22,9 +22,9 @@ namespace DensityCalcClassLibrary
             return Math.Round(plotnost15, 2);
         }
 
-        public static double CalcKoefB15(double plotnost) // расчет коэффицента B15 (2)
+        public static double CalcKoefB15(double plotnost, TypeGroup typeGroup) // расчет коэффицента B15 (2)
         {
-            Koef koef = new Koef(TypeGroup.Neft, plotnost);
+            Koef koef = new Koef(typeGroup, plotnost);
             return Math.Round((koef.K0 + koef.K1 * plotnost) / Math.Pow(plotnost, 2) + koef.K2, 7);
         }
 
@@ -33,26 +33,26 @@ namespace DensityCalcClassLibrary
             return Math.Round(areometr.Calc(plotnost, tIzm), 1);
         }
 
-        public static double IteracionMetodForAreometr(out double B15, double firstPlotnost, double tIzm) //итерационный метод нахождения плотности для ареометра
+        public static double IteracionMetodForAreometr(out double B15, double firstPlotnost, double tIzm ,TypeGroup typeGroup) //итерационный метод нахождения плотности для ареометра
         {
-            B15 = CalcKoefB15(firstPlotnost);
+            B15 = CalcKoefB15(firstPlotnost,typeGroup);
             double endPlotnost = CalcPlotnostForIterAreometr(firstPlotnost, B15, tIzm);
             double currentPlotnost = 0;
 
             while (Math.Abs(endPlotnost - currentPlotnost) > 0.01)
             {
                 currentPlotnost = endPlotnost;
-                B15 = CalcKoefB15(currentPlotnost);
+                B15 = CalcKoefB15(currentPlotnost, typeGroup);
                 endPlotnost = CalcPlotnostForIterAreometr(firstPlotnost, B15, tIzm);
             }
             return Math.Round(endPlotnost, 1);
         }
 
-        public static double IteracionMetodForPlotnometr(out double B15, double firstPlotnost, double tIzm, double davlenie) //итерационный метод нахождения плотности для плотнометра
+        public static double IteracionMetodForPlotnometr(out double B15, double firstPlotnost, double tIzm, double davlenie, TypeGroup typeGroup) //итерационный метод нахождения плотности для плотнометра
         {
 
             /*1 итерация*/
-            B15=Raschot.CalcKoefB15(firstPlotnost);
+            B15=Raschot.CalcKoefB15(firstPlotnost, typeGroup);
             double Y = Raschot.CalcY(firstPlotnost, tIzm);
             double endPlotnost = Raschot.CalcPlotnostForIterPlotnometr(firstPlotnost, B15, Y, tIzm, davlenie);
             double currentPlotnost = 0;
@@ -60,7 +60,7 @@ namespace DensityCalcClassLibrary
             while (Math.Abs(endPlotnost - currentPlotnost) > 0.01)//разность между итерациями
             {
                 currentPlotnost = endPlotnost;
-                B15 = Raschot.CalcKoefB15(currentPlotnost);
+                B15 = Raschot.CalcKoefB15(currentPlotnost, typeGroup);
                 Y = Raschot.CalcY(currentPlotnost, tIzm);
                 endPlotnost = Raschot.CalcPlotnostForIterPlotnometr(firstPlotnost, B15, Y, tIzm, davlenie);
             }

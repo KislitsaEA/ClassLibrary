@@ -1,0 +1,5 @@
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\DensityCalcClassLibrary\bin\Release\DensityCalcClassLibrary.dll
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\DensityCalcClassLibrary\bin\Release\DensityCalcClassLibrary.pdb
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\DensityCalcClassLibrary\obj\Release\DensityCalcClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\DensityCalcClassLibrary\obj\Release\DensityCalcClassLibrary.dll
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\DensityCalcClassLibrary\obj\Release\DensityCalcClassLibrary.pdb

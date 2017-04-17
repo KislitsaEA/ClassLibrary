@@ -1,0 +1,9 @@
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\TestDensityCalcClassLibrary\bin\Release\TestDensityCalcClassLibrary.dll
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\TestDensityCalcClassLibrary\bin\Release\TestDensityCalcClassLibrary.pdb
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\TestDensityCalcClassLibrary\bin\Release\DensityCalcClassLibrary.dll
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\TestDensityCalcClassLibrary\bin\Release\nunit.framework.dll
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\TestDensityCalcClassLibrary\bin\Release\DensityCalcClassLibrary.pdb
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\TestDensityCalcClassLibrary\bin\Release\nunit.framework.xml
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\TestDensityCalcClassLibrary\obj\Release\TestDensityCalcClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\TestDensityCalcClassLibrary\obj\Release\TestDensityCalcClassLibrary.dll
+C:\Users\Саша\Documents\Visual Studio 2012\DensityCalcClassLibrary\TestDensityCalcClassLibrary\obj\Release\TestDensityCalcClassLibrary.pdb
